@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+}
+@keyframes delay1{
+	0%{ transform: scale(1.1,1.1); }
+	100% {transform: translateY(1px);}
+
+}
+
+@keyframes uno{
+	0%{transform: translateX(0);}
+	100%{transform: translateX(1110px);}
+}
+@keyframes dos{
+	0%{transform: translateY(0);}
+	100%{transform: translateY(436px);}
+}
+
+@keyframes tres{
+	0%{transform: translateX(1000px);}
+	100%{transform: translateX(-450px);}
+}
+
+@keyframes btn{
+	0%{transform: scale(0);}
+	50%{transform: scale(0);}
+	100%{transform: scale(1);}
+
+}
+
+@keyframes rotar{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(-7deg);}
+}
+
+@keyframes rotar1{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(3deg);}
+}
+body{
+	margin:0;padding: 0;
+	background-color: #70ABAF;
+
+
+}
+#main{
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	background-color: #F0F7F4;
+	overflow: hidden;
+}
+	
+
+
+.pelicula{
+	float: left;
+	width: 22%;
+	margin:1.5%;
+}
+
+.footer{
+	clear: both;
+}
+
+.Width{
+	width: 100%;
+}
+.moviecover{
+	width: 100%;
+	transition: 250ms;
+	transition-timing-function: ease-in-out;
+
+
+}
+#filmografia{
+	padding: 2%;
+}
+
+.moviecover:hover{
+	transform: scale(1.1,1.1);
+	
+}
+h4{
+	text-align: center;
+}
+
+.fechas{
+	text-align: center;
+}
+h2{
+	text-decoration: underline;
+	text-align: center;
+}
+#footercontent{
+	text-align: center;
+}
+.ChrisNolan{
+	width:25%;
+	float: left;
+}
+
+#filmografia{
+	text-align: center;
+}
+.filmografia{
+	text-align: center;
+
+}
+.texto{
+	margin: 0 10px;
+}
+
+nav{
+	text-align: center;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+nav li{
+	display: inline-block;
+	margin-right: 70px;
+	padding-top: 22px;
+	position: relative;
+	animation-duration: 1s;
+	transform: scale(1);
+
+}
+nav li:hover{
+	animation-name: delay1;
+	animation-duration: 2s;
+	transition-timing-function: ease-in-out;
+
+}
+nav a{
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+nav a:hover{
+	font-weight: bold;
+}
+nav a:before{
+	content:'';
+	display: block;
+	height: 5px;
+	width: 0%;
+	background-color: grey;
+	margin-left: 3px; 
+	position: absolute;
+	top: 0;
+	transition: all ease-in-out 250ms;
+	
+}
+nav a:hover:before{
+	width: 100%;
+}
+
+.subtitulo{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+/* Error 404 */
